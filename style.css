@@ -1,0 +1,44 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, "Microsoft YaHei", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.game {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hint {
+  margin: 0;
+  padding: 1rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  text-align: center;
+}
+
+body.is-white {
+  color-scheme: light;
+  background: #fff;
+  color: #000;
+}
